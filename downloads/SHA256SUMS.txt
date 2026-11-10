@@ -1,0 +1,3 @@
+b3620a23c2f27cde727177d1666b2c23ae1441873f2ba297461c23f41ca78e14  ritsu-demo-debug.apk
+8870ebf82062d4cdd31f6d4b6d085a5a4fd2356796e78b507b4695af79fca2be  ritsu-android-source.zip
+b41be72e46a26fe8b09bcf8fcaac770fa10e1ebf7e2292fa96bf4226ceb6dcad  ritsu-android.zip

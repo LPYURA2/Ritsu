@@ -8,9 +8,9 @@
 
 ## Скачать готовую сборку
 
-- [APK для Android 11+](https://github.com/LPYURA2/Ritsu/releases/download/android-demo-v0.1.0/ritsu-demo-debug.apk)
-- [APK и исходники одним ZIP](https://github.com/LPYURA2/Ritsu/releases/download/android-demo-v0.1.0/ritsu-android.zip)
-- [Исходники Android-проекта](https://github.com/LPYURA2/Ritsu/releases/download/android-demo-v0.1.0/ritsu-android-source.zip)
+- [APK для Android 11+](https://raw.githubusercontent.com/LPYURA2/Ritsu/main/downloads/ritsu-demo-debug.apk)
+- [APK и исходники одним ZIP](https://raw.githubusercontent.com/LPYURA2/Ritsu/main/downloads/ritsu-android.zip)
+- [Исходники Android-проекта](https://raw.githubusercontent.com/LPYURA2/Ritsu/main/downloads/ritsu-android-source.zip)
 - [Описание демо-релиза и проверки](https://github.com/LPYURA2/Ritsu/releases/tag/android-demo-v0.1.0)
 
 Это отладочная демо-сборка. 18 JVM-тестов прошли; Android-тесты собраны, но не выполнены из-за сбоя тестового эмулятора до запуска приложения.
