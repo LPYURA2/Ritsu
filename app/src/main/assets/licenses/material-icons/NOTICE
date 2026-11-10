@@ -1,0 +1,23 @@
+AndroidX Compose Material Icons Extended Android 1.7.8
+Copyright 2025 The Android Open Source Project
+
+This application redistributes fourteen unmodified generated icon source files
+from the AndroidX Compose Material Icons Extended library under Apache-2.0.
+Source archive:
+https://dl.google.com/dl/android/maven2/androidx/compose/material/material-icons-extended-android/1.7.8/material-icons-extended-android-1.7.8-sources.jar
+
+Included files:
+- ArrowUpward.kt
+- AutoAwesome.kt
+- ChatBubbleOutline.kt
+- CloudOff.kt
+- History.kt
+- MicNone.kt
+- Pause.kt
+- Shield.kt
+- Spa.kt
+- Stop.kt
+- StopCircle.kt
+- TrackChanges.kt
+- Tune.kt
+- WbTwilight.kt

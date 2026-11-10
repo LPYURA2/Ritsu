@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.ritsu.core.DemoCoreGatewayTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-11-10T21:07:31" hostname="0e4793f86812" time="0.668">
+  <properties/>
+  <testcase name="STOP is latched revokes grants and survives gateway recreation" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.407"/>
+  <testcase name="malformed saved permission fails closed" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.002"/>
+  <testcase name="invalid and excessive grants are rejected without escalation" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.003"/>
+  <testcase name="invalid target does not consume grant" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.002"/>
+  <testcase name="moving wall clock backwards before expiry revokes grant before action" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.003"/>
+  <testcase name="journal remains bounded including denied actions" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.069"/>
+  <testcase name="storage write failure blocks action and fails closed" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.022"/>
+  <testcase name="pause blocks all agent actions while expiry keeps running" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.003"/>
+  <testcase name="chat validates input and records no message body in audit" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.024"/>
+  <testcase name="moving wall clock backwards does not restore expired grants" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.002"/>
+  <testcase name="grant is scoped and consumed exactly once per action" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.025"/>
+  <testcase name="grant expires at exact boundary without UI refresh" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.002"/>
+  <testcase name="temporary grants are not restored across process restart" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.002"/>
+  <testcase name="concurrent actions cannot duplicate a single remaining allowance" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.047"/>
+  <testcase name="storage read failure starts in STOP" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.003"/>
+  <testcase name="goal action cannot bypass core authorization" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.007"/>
+  <testcase name="PAUSED survives gateway recreation and needs explicit resume" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.004"/>
+  <testcase name="refresh expires grants without creating repetitive audit events" classname="dev.ritsu.core.DemoCoreGatewayTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

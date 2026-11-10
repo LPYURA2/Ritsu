@@ -1,0 +1,39 @@
+Проверка Android-эмулятора — 2026-11-10 UTC
+
+Среда: Android 11 / API 30, AOSP x86_64, emulator 37.2.13.
+Образ: RSR1.210722.013.A2/10067904, userdebug/test-keys.
+Аппаратное ускорение недоступно: /dev/kvm отсутствует; использовались
+программная эмуляция TCG (-accel off) и SwiftShader. Лимит среды: 2 CPU.
+
+Попытка установки финального app-debug.apk:
+  adb install -r -t app-debug.apk
+Результат:
+  cmd: Failure calling service package: Broken pipe (32)
+
+Платформа перезапустилась до запуска приложения: исходные zygote PID 276
+и system_server PID 556 сменились новыми процессами zygote 1467/1468.
+sys.boot_completed не был достигнут.
+
+Сохранённая системная запись DropBox:
+  system_server_watchdog@1794345757532.txt.gz
+  Process: system_server
+  Subject: Blocked in handler on main thread (main)
+
+Главный поток system_server ожидал CompletableFuture.get в:
+  RoleManagerService.maybeGrantDefaultRolesSync
+  RoleManagerService.onStartUser
+  ActivityManagerService.systemReady
+  SystemServer.startOtherServices
+
+Это подтверждает сбой watchdog при начальной загрузке Android и выдаче
+системных ролей. Конкретная первопричина зависания не установлена;
+программная эмуляция и ограничение CPU — характеристики среды,
+а не доказанная причина сбоя.
+
+MainActivity приложения не запускалась. Скриншот приложения не получен;
+проверки интерфейса на устройстве не выполнялись. Сбой приложения
+не установлен: выполнение приложения не начиналось.
+
+После подтверждения перезапуска дальнейшие попытки прекращены.
+Созданный для проверки эмулятор остановлен штатной командой adb emu kill.
+Эта попытка не изменяет результаты сборки APK, JVM-тестов и Android Lint.
